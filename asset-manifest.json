@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pricing-component-toggle/static/css/main.9caf7bae.css",
+    "main.js": "/pricing-component-toggle/static/js/main.93bd68db.js",
+    "index.html": "/pricing-component-toggle/index.html",
+    "main.9caf7bae.css.map": "/pricing-component-toggle/static/css/main.9caf7bae.css.map",
+    "main.93bd68db.js.map": "/pricing-component-toggle/static/js/main.93bd68db.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9caf7bae.css",
+    "static/js/main.93bd68db.js"
+  ]
+}
