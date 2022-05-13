@@ -1,0 +1,26 @@
+@use '../abstracts/' as a;
+
+:root {
+
+	// colors
+	--clr-bg: hsl(210, 46%, 95%);
+
+	// font-families
+	--ff-sans: 'Barlow Semi Condensed', sans-serif;
+
+	// font-sizes from ../abstract/type
+	// Might need to add more breakpoints
+	// @each $screen-size, $font-size in a.$type-scale {
+	// 	@if $screen-size == small {
+	// 		@each $size, $value in $font-size {
+	// 			--fs-#{$size}: #{$value};
+	// 		}
+	// 	} @else {
+	// 		@include a.breakpoint(medium) {
+	// 			@each $size, $value in $font-size {
+	// 				--fs-#{$size}: #{$value};
+	// 			}
+	// 		}
+	// 	}
+	// }
+}
