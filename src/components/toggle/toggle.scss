@@ -1,8 +1,4 @@
 @use '../../sass/abstracts/' as abs;
-// .pricing-toggle__switch {
-
-
-// }
 
 // Switch - the box around the slider
 .pricing-toggle__switch {
@@ -33,11 +29,11 @@
 		right: 0;
 		bottom: 0;
 		background: linear-gradient(to right, var(--clr-gradient-start), var(--clr-gradient-end));
-		transition: .4s;
+		transition: transform .4s cubic-bezier(0.85, 0, 0.15, 1);
 		border-radius: 25px;
 
 		&:hover {
-			// background-color: $sliderBar;
+			background: var(--clr-gradient-start);
 		}
 
 		&::before {
@@ -54,12 +50,12 @@
 	}
 }
 
-input:checked + .slider {
-	// background-color: $sliderBg;
-}
+// input:checked + .slider {
+// 	background-color: $sliderBg;
+// }
 
 input:focus + .slider {
-	// box-shadow: 0 0 1px $sliderBg;
+	box-shadow: 0 0 1px var(--clr-text-dark);
 }
 
 input:checked + .slider:before {

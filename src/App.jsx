@@ -1,4 +1,5 @@
 import './App.scss';
+import PriceCard from './components/price-card/PriceCard';
 import Toggle from './components/toggle/Toggle';
 
 function App() {
@@ -11,7 +12,9 @@ function App() {
         <p className='pricing-toggle__label'>Monthly</p>
       </div>
       <div className="cards">
-        
+        <PriceCard />
+        <PriceCard />
+        <PriceCard />        
       </div>
     </div>
   );
