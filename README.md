@@ -1,6 +1,6 @@
 # Frontend Mentor - 
 
-This is a solution to the [Enter challenge here](https://www.frontendmentor.io/challenges/challenge-name). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Pricing component with toggle challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -20,10 +20,11 @@ This is a solution to the [Enter challenge here](https://www.frontendmentor.io/c
 ### The challenge
 
 Users should be able to:
+Users should be able to:
 
 - View the optimal layout for the component depending on their device's screen size
-- Navigate the slider using either their mouse/trackpad or keyboard
-
+- Control the toggle with both their mouse/trackpad and their keyboard
+- **Bonus**: Complete the challenge with just HTML and CSS
 
 ### Screenshot
 
@@ -32,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [github.com/adiah-frontend-mentor/challenge-repo](https://github.com/adiah-frontend-mentor/challenge-repo)
-- Live Site URL: [adiah-frontend-mentor.github.io/challenge-rpo](https://adiah-frontend-mentor.github.io/challenge-repo)
+- Solution URL: [github.com/adiah-frontend-mentor/pricing-component-toggle](https://github.com/adiah-frontend-mentor/pricing-component-toggle)
+- Live Site URL: [adiah-frontend-mentor.github.io/pricing-component-toggle](https://adiah-frontend-mentor.github.io/pricing-component-toggle)
 
 ## My process
 

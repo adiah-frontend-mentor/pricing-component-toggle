@@ -3,24 +3,31 @@
 :root {
 
 	// colors
-	--clr-bg: hsl(210, 46%, 95%);
+	--clr-bg: hsl(240, 78%, 98%);
+
+	--clr-gradient-start: hsl(236, 72%, 79%);
+	--clr-gradient-end: hsl(237, 63%, 64%);
+
+	--clr-text: hsl(233, 13%, 49%);
+	--clr-text-light: hsl(234, 14%, 74%);
+	--clr-text-dark: hsl(232, 13%, 33%);
 
 	// font-families
-	--ff-sans: 'Barlow Semi Condensed', sans-serif;
+	--ff-sans: 'Montserrat', sans-serif;
 
 	// font-sizes from ../abstract/type
 	// Might need to add more breakpoints
-	// @each $screen-size, $font-size in a.$type-scale {
-	// 	@if $screen-size == small {
-	// 		@each $size, $value in $font-size {
-	// 			--fs-#{$size}: #{$value};
-	// 		}
-	// 	} @else {
-	// 		@include a.breakpoint(medium) {
-	// 			@each $size, $value in $font-size {
-	// 				--fs-#{$size}: #{$value};
-	// 			}
-	// 		}
-	// 	}
-	// }
+	@each $screen-size, $font-size in a.$type-scale {
+		@if $screen-size == small {
+			@each $size, $value in $font-size {
+				--fs-#{$size}: #{$value};
+			}
+		} @else {
+			@include a.breakpoint(medium) {
+				@each $size, $value in $font-size {
+					--fs-#{$size}: #{$value};
+				}
+			}
+		}
+	}
 }
