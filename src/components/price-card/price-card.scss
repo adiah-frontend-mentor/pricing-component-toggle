@@ -8,6 +8,28 @@
 	background-color: #fff;
 	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 
+	&--promoted {
+		background: linear-gradient(to bottom, var(--clr-gradient-start), var(--clr-gradient-end));
+		color: #fff;
+
+		.price-card__price-wrapper {
+			color: #fff;
+		}
+
+		.price-card__feature {
+			border-color: var(--clr-divider-light);
+
+			&:first-child {
+				border-color: var(--clr-divider-light);
+			}
+		}
+
+		.price-card__cta {
+			background: #fff;
+			color: var(--clr-gradient-end);
+		}
+	}
+
 	&__heading {
 		font-size: var(--fs-500);
 		margin-bottom: 1rem;
