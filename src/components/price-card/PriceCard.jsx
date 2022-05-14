@@ -27,7 +27,7 @@ const PriceCard = ({data, pricing}) => {
 			<li className="price-card__feature">{data.users} Users Allowed</li>
 			<li className="price-card__feature">Send up to {data.sendCapacity} GB</li>
 		</ul>
-		<button className="price-card__cta">Learn More</button>
+		<button className="price-card__cta"><span>Learn More</span></button>
 	</div>
   )
 }

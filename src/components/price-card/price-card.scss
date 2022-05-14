@@ -1,3 +1,5 @@
+@use '../../sass/abstracts/' as abs;
+
 .price-card {
 	width: 100%;
 	padding: 2.125rem 1.8125rem;
@@ -8,9 +10,23 @@
 	background-color: #fff;
 	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 
+	@include abs.breakpoint(medium) {
+		min-width: 330px;
+		&:first-child {
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+
+		&:last-child {
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+	}
+
 	&--promoted {
 		background: linear-gradient(to bottom, var(--clr-gradient-start), var(--clr-gradient-end));
 		color: #fff;
+		padding-block: 3.375rem;
 
 		.price-card__price-wrapper {
 			color: #fff;
@@ -29,6 +45,20 @@
 		.price-card__cta {
 			background: #fff;
 			color: var(--clr-gradient-end);
+			transition: background-color 300ms ease-in-out;
+
+			@include abs.breakpoint(medium) {
+				&:hover,
+				&:focus {
+					background-color: transparent;
+					color: #fff;
+					border-color: #fff;
+
+					&::before {
+						opacity: 0;
+					}
+				}
+			}
 		}
 	}
 
@@ -38,8 +68,10 @@
 	}
 
 	&__price-wrapper {
+		width: 100%;
 		display: flex;
 		align-items: center;
+		justify-content: center;
 		margin-bottom: 1.5rem;
 		color: var(--clr-text-dark);
 
@@ -95,7 +127,7 @@
 
 	&__cta {
 		background: linear-gradient(to right, var(--clr-gradient-start), var(--clr-gradient-end));
-		border: none;
+		border: 1px solid transparent;
 		border-radius: 6px;
 		width: 100%;
 		padding-block: 0.875rem;
@@ -104,5 +136,43 @@
 		text-transform: uppercase;
 		letter-spacing: 1.02px;
 		cursor: pointer;
+
+		position: relative;
+		z-index: 1;
+		
+
+		transition: color 300ms ease-in-out, border-color 300ms ease-in-out;
+
+		@include abs.breakpoint(medium) {
+			span {
+				position: relative;
+				z-index: 3;
+			}
+
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				background: #fff;
+				opacity: 0;
+				transition: opacity 400ms;
+				z-index: 2;
+				border-radius: inherit;
+			}
+
+
+			&:hover,
+			&:focus {
+				border-color: var(--clr-gradient-end);
+				color: var(--clr-gradient-end);
+
+				&::before {
+					opacity: 1;
+				}
+			}
+		}
 	}
 }
