@@ -6,19 +6,20 @@ const PriceCard = ({data, pricing}) => {
 	<div className={`price-card ${data.promoted ? 'price-card--promoted' : ''}`}>
 		<h2 className='price-card__heading'>{data.type}</h2>
 
-		<div className="price-card__price-wrapper">
-			<span className="price-card__dollars">$</span>
+
 			<SwitchTransition>
 				<CSSTransition
 					key={pricing}
 					timeout={400}
-					classNames={'price-card__price-'}
+					classNames={'price-card__price-wrapper-'}
 				>
-					<p className="price-card__price">{pricing === 'annual' ? data.price.annually : data.price.monthly}</p>
+					<div className="price-card__price-wrapper">
+						<span className="price-card__dollars">$</span>
+						<p className="price-card__price">{pricing === 'annual' ? data.price.annually : data.price.monthly}</p>
+					</div>
 				</CSSTransition>
 			</SwitchTransition>
 
-		</div>
 
 
 		<ul className="price-card__features-list">

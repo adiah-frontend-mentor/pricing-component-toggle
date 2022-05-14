@@ -42,15 +42,6 @@
 		align-items: center;
 		margin-bottom: 1.5rem;
 		color: var(--clr-text-dark);
-	}
-
-	&__dollars {
-		font-size: var(--fs-700);
-	}
-
-	&__price {
-		font-size: var(--fs-800);
-		letter-spacing: -0.3px;
 
 		&--enter { 
 			opacity: 0;
@@ -62,7 +53,6 @@
 				transition: opacity 400ms, scale 400ms;
 			}
 
-			&-done { }
 		}
 
 		&--exit {
@@ -72,8 +62,18 @@
 				transition: opacity 400ms, scale 400ms;
 			}
 
-			&-done { }
 		}
+	}
+
+	&__dollars {
+		font-size: var(--fs-700);
+	}
+
+	&__price {
+		font-size: var(--fs-800);
+		letter-spacing: -0.3px;
+
+		
 	}
 
 	&__features-list {
