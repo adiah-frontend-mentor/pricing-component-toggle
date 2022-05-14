@@ -14,6 +14,8 @@
 
 		.price-card__price-wrapper {
 			color: #fff;
+
+
 		}
 
 		.price-card__feature {
@@ -49,6 +51,29 @@
 	&__price {
 		font-size: var(--fs-800);
 		letter-spacing: -0.3px;
+
+		&--enter { 
+			opacity: 0;
+			scale: 0.5;
+
+			&-active { 
+				opacity: 1;
+				scale: 1;
+				transition: opacity 400ms, scale 400ms;
+			}
+
+			&-done { }
+		}
+
+		&--exit {
+			&-active { 
+				opacity: 0;
+				scale: 0.5;
+				transition: opacity 400ms, scale 400ms;
+			}
+
+			&-done { }
+		}
 	}
 
 	&__features-list {
